@@ -506,9 +506,6 @@ video {
 .absolute{
   position: absolute;
 }
-.relative{
-  position: relative;
-}
 .left-0{
   left: 0px;
 }
@@ -523,9 +520,6 @@ video {
 }
 .top-2{
   top: 0.5rem;
-}
-.z-0{
-  z-index: 0;
 }
 .z-10{
   z-index: 10;
@@ -715,6 +709,9 @@ video {
 .bg-\#F3F4F6{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.bg-hero{
+  background-image: url(../public/img/bgfon.jpg);
 }
 .p-0{
   padding: 0px;
@@ -951,20 +948,6 @@ html{
   /* border: 2px solid rgba(0, 0, 0, 0.767); */
   /* padding: 15px; */
   border-radius: 24px;
-}
-
-.rasm{
-  width: 100%;
-  max-height: 400px;
-  display: flex;
-  overflow: hidden;
-  z-index: -1;
-}
-
-@media(max-width: 768px){
-  .rasm{
-    max-height: 300px;
-  }
 }
 
 .hover\:gap-10:hover{

@@ -19,17 +19,3 @@ html{
   /* padding: 15px; */
   border-radius: 24px;
 }
-
-.rasm{
-  width: 100%;
-  max-height: 400px;
-  display: flex;
-  overflow: hidden;
-  z-index: -1;
-}
-
-@media(max-width: 768px){
-  .rasm{
-    max-height: 300px;
-  }
-}
