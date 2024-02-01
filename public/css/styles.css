@@ -583,12 +583,6 @@ video {
 .h-auto{
   height: auto;
 }
-.h-4{
-  height: 1rem;
-}
-.h-48{
-  height: 12rem;
-}
 .min-h-screen{
   min-height: 100vh;
 }
@@ -780,11 +774,14 @@ video {
 .pb-10{
   padding-bottom: 2.5rem;
 }
-.pb-16{
-  padding-bottom: 4rem;
+.pb-14{
+  padding-bottom: 3.5rem;
 }
 .pb-6{
   padding-bottom: 1.5rem;
+}
+.pb-8{
+  padding-bottom: 2rem;
 }
 .pl-2{
   padding-left: 0.5rem;
@@ -804,6 +801,9 @@ video {
 .pr-6{
   padding-right: 1.5rem;
 }
+.pt-10{
+  padding-top: 2.5rem;
+}
 .pt-15{
   padding-top: 60px;
 }
@@ -812,15 +812,6 @@ video {
 }
 .pt-8{
   padding-top: 2rem;
-}
-.pt-10{
-  padding-top: 2.5rem;
-}
-.pb-14{
-  padding-bottom: 3.5rem;
-}
-.pb-8{
-  padding-bottom: 2rem;
 }
 .text-center{
   text-align: center;
@@ -942,7 +933,7 @@ video {
 }
 
 .rasm{
-    background-image: url(/public/img/bgfon.jpg);
+    background-image: url("../public/img/bgfon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -994,16 +985,16 @@ html{
     margin-right: 0px;
   }
 
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .md\:mb-10{
     margin-bottom: 2.5rem;
   }
 
   .md\:mb-20{
     margin-bottom: 5rem;
-  }
-
-  .md\:mb-0{
-    margin-bottom: 0px;
   }
 
   .md\:mb-8{
@@ -1095,10 +1086,6 @@ html{
 
   .md\:pb-15{
     padding-bottom: 60px;
-  }
-
-  .md\:pb-30{
-    padding-bottom: 120px;
   }
 
   .md\:pl-10{
