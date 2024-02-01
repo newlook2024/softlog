@@ -49,9 +49,7 @@ module.exports = {
       },
       fontSize:{
         '3' : "12px"
-      },
-
-      
+      },   
     
       
      },
