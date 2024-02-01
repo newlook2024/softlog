@@ -710,6 +710,15 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.bg-\[\]{
+  background-color: ;
+}
+.bg-\[url\(\"\.\.\/public\/img\/bgfon\.jpg\"\)\]{
+  background-image: url("../public/img/bgfon.jpg");
+}
+.bg-\[url\(\.\.\/public\/img\/bgfon\.jpg\)\]{
+  background-image: url(../public/img/bgfon.jpg);
+}
 .p-0{
   padding: 0px;
 }
