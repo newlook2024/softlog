@@ -6,7 +6,6 @@
 @tailwind utilities;
 
 .rasm{
-    background-image: url("../public/img/bgfon.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

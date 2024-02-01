@@ -50,6 +50,9 @@ module.exports = {
       fontSize:{
         '3' : "12px"
       },   
+      backgroundImage: {
+        'hero' : "url(`../public/img/bgfon.jpg`)"
+      }
     
       
      },
