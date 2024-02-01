@@ -5,13 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.rasm{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 body{
     font-family: 'Inter', sans-serif;
+    /* background-image: url('/public/img/bgfon.jpg'); */
 }
 
 html{

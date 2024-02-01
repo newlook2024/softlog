@@ -710,15 +710,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
-.bg-\[\]{
-  background-color: ;
-}
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+.bg-\[\(\'\/public\/img\/bgfon\.jpg\'\)\]{
+  background-color: ('/public/img/bgfon.jpg');
 }
 .bg-hero{
   background-image: url(`../public/img/bgfon.jpg`);
+}
+.bg-\[url\(\)\]{
+  background-image: url();
+}
+.bg-\[url\(\'\/public\/img\/bgfon\.jpg\'\)\]{
+  background-image: url('/public/img/bgfon.jpg');
 }
 .p-0{
   padding: 0px;
@@ -942,13 +944,9 @@ video {
   transition-duration: 500ms;
 }
 
-.rasm{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 body{
     font-family: 'Inter', sans-serif;
+    /* background-image: url('/public/img/bgfon.jpg'); */
 }
 
 html{
