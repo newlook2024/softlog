@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="py-2 md:py-3">
+        <div class="max-w-1376 mx-auto px-5 flex justify-between items-center">
+            <div class="flex gap-10 items-center">
+                <a href="./index.html" class="header-logo flex" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="76" height="24" viewBox="0 0 76 24" fill="none">
+                        <path
+                            d="M5.67822 19.4453C9.11503 19.4453 11.1572 17.9687 11.1572 15.1408C11.1572 12.3379 9.36408 11.512 6.10159 11.0365C4.20885 10.7612 3.58624 10.4359 3.58624 9.61001C3.58624 8.80918 4.25866 8.2586 5.42917 8.2586C6.67439 8.2586 7.2721 8.75912 7.47134 9.83525H10.7836C10.4599 6.83212 8.29319 5.78102 5.40427 5.78102C2.73949 5.78102 0.249045 7.13243 0.249045 9.86027C0.249045 12.4129 1.59388 13.414 5.0556 13.9395C6.92344 14.2148 7.69548 14.5902 7.69548 15.4911C7.69548 16.3921 7.04796 16.9176 5.65331 16.9176C4.08433 16.9176 3.51153 16.2419 3.3621 15.0657H0C0.124522 17.8936 2.16669 19.4453 5.67822 19.4453Z"
+                            fill="#111827" />
+                        <path
+                            d="M18.6523 16.6924C16.6101 16.6924 15.4645 15.1908 15.4645 12.6882V12.488C15.4645 9.9854 16.6599 8.53389 18.6523 8.53389C20.6695 8.53389 21.84 10.0355 21.84 12.5381V12.7132C21.84 15.1908 20.6695 16.6924 18.6523 16.6924ZM18.6274 19.4453C22.5374 19.4453 25.501 16.8175 25.501 12.6882V12.488C25.501 8.40876 22.5623 5.78102 18.6523 5.78102C14.7423 5.78102 11.7786 8.45881 11.7786 12.5631V12.7633C11.7786 16.8425 14.7423 19.4453 18.6274 19.4453Z"
+                            fill="#111827" />
+                        <path
+                            d="M26.9503 19.17H30.5365V8.65902H33.3756V6.08134H30.5365V4.47967C30.5365 3.47862 31.0097 2.75287 32.1553 2.75287C32.6783 2.75287 33.1266 2.85297 33.4753 2.9781V0.25026C32.9025 0.0750787 32.3795 0 31.6074 0C28.7185 0 26.9503 1.52659 26.9503 4.57977V6.08134H25.2319V8.65902H26.9503V19.17Z"
+                            fill="#111827" />
+                        <path
+                            d="M40.0022 19.4202C40.9734 19.4202 41.6957 19.245 42.1938 19.0699V16.2669C41.7704 16.4421 41.3719 16.5172 40.824 16.5172C39.9025 16.5172 39.3796 16.0167 39.3796 14.9656V8.65902H42.119V6.08134H39.3796V3.25339H35.7933V6.08134H34.1247V8.65902H35.7933V15.2909C35.7933 18.0188 37.2627 19.4202 40.0022 19.4202Z"
+                            fill="#111827" />
+                        <path d="M43.5572 19.17H47.1434V0.150156H43.5572V19.17Z" fill="#111827" />
+                        <path
+                            d="M54.9505 16.6924C52.9083 16.6924 51.7627 15.1908 51.7627 12.6882V12.488C51.7627 9.9854 52.9581 8.53389 54.9505 8.53389C56.9677 8.53389 58.1383 10.0355 58.1383 12.5381V12.7132C58.1383 15.1908 56.9677 16.6924 54.9505 16.6924ZM54.9256 19.4453C58.8356 19.4453 61.7992 16.8175 61.7992 12.6882V12.488C61.7992 8.40876 58.8605 5.78102 54.9505 5.78102C51.0405 5.78102 48.0769 8.45881 48.0769 12.5631V12.7633C48.0769 16.8425 51.0405 19.4453 54.9256 19.4453Z"
+                            fill="#111827" />
+                        <path
+                            d="M69.1264 24C73.4099 24 75.9751 22.0229 76 18.1439V6.08134H72.4138V8.03337C71.6666 6.70699 70.3965 5.78102 68.2796 5.78102C65.042 5.78102 62.5516 8.40876 62.5516 12.1627V12.3379C62.5516 16.2169 65.0669 18.5944 68.2298 18.5944C70.1474 18.5944 71.6915 17.4432 72.4138 16.1668V18.1439C72.4138 20.196 71.318 21.3472 69.1264 21.3472C67.2834 21.3472 66.4616 20.5965 66.2375 19.4453H62.6512C62.9999 22.1481 64.9175 24 69.1264 24ZM69.3007 15.8665C67.5076 15.8665 66.2375 14.5151 66.2375 12.3379V12.1376C66.2375 9.9854 67.3582 8.53389 69.3754 8.53389C71.3429 8.53389 72.5134 9.8853 72.5134 12.1126V12.2878C72.5134 14.5151 71.1934 15.8665 69.3007 15.8665Z"
+                            fill="#111827" />
+                    </svg>
+                </a>
+                <ul class="md:flex items-center gap-3 hidden">
+                    <li><a href="./index.html#catigory"
+                            class="text-#111827 py-2 px-5 size-4 font-medium leading-7 text-center hover:opacity-80 active:opacity-60">Categories</a>
+                    </li>
+                    <li><a href="./blogs.html" target="_blank"
+                            class="text-#111827 font-medium py-2 hover:opacity-80 active:opacity-60 px-5 size-4 leading-7 text-center">Blog</a>
+                    </li>
+                    <li><a href="./index.html#footer"
+                            class="text-#111827 hover:opacity-80 active:opacity-60 py-2 px-5 size-4 font-medium leading-7 text-center">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden md:flex gap-3 items-center">
+                <a href="#"
+                    class="font-semibold leading-6 flex justify-center items-center py-2 px-5 rounded-3xl border-2 hover:opacity-80 active:opacity-60">Claim
+                    profile</a>
+                <a href="#"
+                    class="font-semibold leading-6 justify-center items-center bg-#2563EB text-white py-2 px-5 hover:opacity-80 active:opacity-60 rounded-3xl border-2">Write
+                    a review</a>
+            </div>
+            <button class="flex md:hidden lg:hidden" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 8H20M4 16H20" stroke="#111827" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div id="responsiveNav"
+                class="flex bg-#152855d3 flex-col px-10 z-10 py-2 md:hidden lg:hidden fixed top-0 duration-500 left-full items-center justify-center min-h-screen w-full opacity-90">
+                <button id="close" class="block w-10 h-10 absolute top-2 right-[7%]">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#dbdbdb"
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                    </svg>
+                </button>
+                <ul class="flex flex-col items-center w-full gap-6 mb-6">
+                    <li class="w-full border-b-2 text-center pb-6"><a href="./index.html#catigory"
+                            class="text-white px-5 text-2xl font-medium leading-7 text-center hover:opacity-80 active:opacity-60">Categories</a>
+                    </li>
+                    <li class="w-full border-b-2 text-center pb-6"><a href="./blogs.html"
+                            class="text-white font-medium hover:opacity-80 active:opacity-60 px-5 text-2xl leading-7 text-center">Blog</a>
+                    </li>
+                    <li class="w-full border-b-2 text-center pb-6"><a href="./index.html#footer"
+                            class="text-white hover:opacity-80 active:opacity-60 px-5 text-2xl font-medium leading-7 text-center">Contact</a>
+                    </li>
+                </ul>
+                <div class="flex flex-col shrink-0 gap-3 justify-between items-center w-full">
+                    <a href="#"
+                        class="font-semibold w-full leading-6 flex justify-center items-center py-2 px-5 rounded-3xl border-2 hover:bg-white hover:text-black active:opacity-60 transition duration-500 text-white">Claim
+                        profile</a>
+                    <a href="#"
+                        class="font-semibold w-full leading-6 flex justify-center items-center py-2 px-5 rounded-3xl border-2 hover:bg-white hover:text-black active:opacity-60 transition-all duration-500 text-white">Write
+                        a review</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-20 md:py-30 rasm">
+        <div class="max-w-912 mx-auto px-5">
+            <h1 class="text-white text-5xl font-bold text-center mb-5">Category title</h1>
+            <p class="text-xl text-center max-w-912 font-medium leading-7 text-white">Accounting software automates an
+                organization's financial functions and transactions with modules including accounts payable, accounts
+                receivable, payroll, billing and general ledger.</p>
+        </div>
+    </section>
+    <section class="pt-8 md:pt-10 md:pb-15 pb-8">
+        <div class="lg:max-w-1376 justify-between mx-auto px-5">
+            <div class="lg:max-w-1376 flex items-center justify-between mb-8 md:mb-10">
+                <p class="text-#0F172A leading-6"><span class="font-semibold">805</span> <span
+                        class="font-normal">Listings</span></p>
+                <button class="border-2 rounded-3xl py-3 px-6 flex items-center gap-2">Filter <svg class="flex"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M12 6V4M12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10M12 6C13.1046 6 14 6.89543 14 8C14 9.10457 13.1046 10 12 10M6 18C7.10457 18 8 17.1046 8 16C8 14.8954 7.10457 14 6 14M6 18C4.89543 18 4 17.1046 4 16C4 14.8954 4.89543 14 6 14M6 18V20M6 14V4M12 10V20M18 18C19.1046 18 20 17.1046 20 16C20 14.8954 19.1046 14 18 14M18 18C16.8954 18 16 17.1046 16 16C16 14.8954 16.8954 14 18 14M18 18V20M18 14V4"
+                            stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></button>
+            </div>
+            <div
+                class="lg:max-w-1376 justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10 md:mb-20 md:gap-5 gap-y-4">
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3 class="leading-6 font-semibold">Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col gap-6 w-full border border-#D1D5DB rounded-lg">
+                    <div class="flex gap-4 items-center">
+                        <img src="/public/img/figmalogo.svg" alt="logo">
+                        <div class=" w-full flex-col">
+                            <div class="flex gap-2 items-center justify-between w-full mb-2">
+                                <h3>Figma</h3>
+                                <div class="flex gap-2">
+                                    <p class="flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                            viewBox="0 0 17 16" fill="none">
+                                            <path
+                                                d="M7.36248 1.64084C7.65745 0.733 8.94182 0.733 9.23674 1.64084L10.2907 4.88451C10.4227 5.29052 10.8009 5.5654 11.2279 5.5654H14.6385C15.593 5.5654 15.99 6.78689 15.2177 7.34797L12.4584 9.35267C12.1131 9.60355 11.9685 10.0483 12.1005 10.4543L13.1544 13.698C13.4493 14.6058 12.4104 15.3608 11.638 14.7998L8.87885 12.795C8.53348 12.5441 8.0658 12.5441 7.72044 12.795L4.9612 14.7998C4.18895 15.3608 3.14988 14.6058 3.44485 13.698L4.49879 10.4543C4.6307 10.0483 4.48619 9.60355 4.14083 9.35267L1.38159 7.34797C0.609328 6.78689 1.00622 5.5654 1.96078 5.5654H5.37138C5.79828 5.5654 6.17662 5.29052 6.30854 4.88451L7.36248 1.64084Z"
+                                                fill="#F59E0B" />
+                                        </svg>
+                                        4/5
+                                    </p>
+                                    <a class="underline text-#2563EB" href="#">(20 reviews)</a>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="border-2 rounded-sm  px-2 py-1 text-xs leading-4 text-#111827">Category</a>
+                        </div>
+                    </div>
+                    <div class="mb-24px">
+                        <p class="tracking-wider mb-2 text-sm font-normal leading-5">
+                            monday.com Work OS is an open platform where anyone can create and shape the tools they
+                            need to run every aspect of their work. By combining building blocks, like apps and
+                            integrations, organizations...
+                        </p>
+                        <a href="#" class="text-#2563EB text-sm leading-5 underline">Read more</a>
+                    </div>
+                    <div class="flex gap-3 ml-auto mr-auto w-full justify-center items-center">
+                        <a href="#"
+                            class=" py-3 px-6 text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center md:w-full w-full hover:opacity-80">Show
+                            more</a>
+                        <a href="#"
+                            class="py-3 md:w-full text-center hover:opacity-80 w-full px-6 md:text-center font-semibold leading-6 border-2 rounded-3xl flex justify-center bg-#2563EB text-white">Try
+                            for free</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center"> <button
+                    class="border-2 rounded-3xl    py-3 px-6 block w-full md:w-auto md:inline-block">Load
+                    more</button></div>
+        </div>
+    </section>
+    <section class="md:py-15 py-8" id="catigory">
+        <!-- CATEGORIES CONTAINER -->
+        <div class="lg:max-w-1376 px-5 mx-auto">
+            <h1 class="w-full text-#111827 text-2xl md:text-3xl leading-9 font-semibold md:mb-10 mb-8">
+                Related categories
+            </h1>
+            <!-- CRM SOFTWARE -->
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-center">
+                <a href="#"
+                    class="w-full rounded-lg p-6 flex border-#D1D5DB transition-all duration-500 border gap-3 hover:gap-28">
+                    <div class="flex flex-col gap-2 w-full">
+                        <h5 class="flex leading-6 font-semibold w-full">CRM Software</h5>
+                        <p class="w-26 text-center py-1 px-2 border border-#D1D5DB text-xs font-normal leading-4 flex">
+                            Sales software</p>
+                    </div>
+                    <button class="p-3 w-2/6"><svg class="flex" xmlns="http://www.w3.org/2000/svg" width="25"
+                            height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12L3.5 12" stroke="#111827" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+                </a>
+                <a href="#"
+                    class="w-full rounded-lg p-6 flex border-#D1D5DB transition-all duration-500 border gap-3 hover:gap-28">
+                    <div class="flex flex-col gap-2 w-full">
+                        <h5 class="flex leading-6 font-semibold w-full">CRM Software</h5>
+                        <p class="w-26 text-center py-1 px-2 border border-#D1D5DB text-xs font-normal leading-4 flex">
+                            Sales software</p>
+                    </div>
+                    <button class="p-3 w-2/6"><svg class="flex" xmlns="http://www.w3.org/2000/svg" width="25"
+                            height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12L3.5 12" stroke="#111827" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+                </a>
+                <a href="#"
+                    class="w-full rounded-lg p-6 flex border-#D1D5DB transition-all duration-500 border gap-3 hover:gap-28">
+                    <div class="flex flex-col gap-2 w-full">
+                        <h5 class="flex leading-6 font-semibold w-full">CRM Software</h5>
+                        <p class="w-26 text-center py-1 px-2 border border-#D1D5DB text-xs font-normal leading-4 flex">
+                            Sales software</p>
+                    </div>
+                    <button class="p-3 w-2/6"><svg class="flex" xmlns="http://www.w3.org/2000/svg" width="25"
+                            height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12L3.5 12" stroke="#111827" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+                </a>
+                <a href="#"
+                    class="w-full rounded-lg p-6 flex border-#D1D5DB transition-all duration-500 border gap-3 hover:gap-28">
+                    <div class="flex flex-col gap-2 w-full">
+                        <h5 class="flex leading-6 font-semibold w-full">CRM Software</h5>
+                        <p class="w-26 text-center py-1 px-2 border border-#D1D5DB text-xs font-normal leading-4 flex">
+                            Sales software</p>
+                    </div>
+                    <button class="p-3 w-2/6"><svg class="flex" xmlns="http://www.w3.org/2000/svg" width="25"
+                            height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12L3.5 12" stroke="#111827" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+                </a>
+                <a href="#"
+                    class="w-full rounded-lg p-6 flex border-#D1D5DB transition-all duration-500 border gap-3 hover:gap-28">
+                    <div class="flex flex-col gap-2 w-full">
+                        <h5 class="flex leading-6 font-semibold w-full">CRM Software</h5>
+                        <p class="w-26 text-center py-1 px-2 border border-#D1D5DB text-xs font-normal leading-4 flex">
+                            Sales software</p>
+                    </div>
+                    <button class="p-3 w-2/6"><svg class="flex" xmlns="http://www.w3.org/2000/svg" width="25"
+                            height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12L3.5 12" stroke="#111827" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+                </a>
+                <a href="#"
+                    class="w-full rounded-lg p-6 flex border-#D1D5DB transition-all duration-500 border gap-3 hover:gap-28">
+                    <div class="flex flex-col gap-2 w-full">
+                        <h5 class="flex leading-6 font-semibold w-full">CRM Software</h5>
+                        <p class="w-26 text-center py-1 px-2 border border-#D1D5DB text-xs font-normal leading-4 flex">
+                            Sales software</p>
+                    </div>
+                    <button class="p-3 w-2/6"><svg class="flex" xmlns="http://www.w3.org/2000/svg" width="25"
+                            height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M14.5 5L21.5 12M21.5 12L14.5 19M21.5 12L3.5 12" stroke="#111827" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+                </a>
+
+            </div>
+            <!-- CRM SOFTWARE -->
+        </div>
+        <!-- CATEGORIES CONTEINER END -->
+    </section>
+    <section class="py-8 md:py-15">
+        <div class="max-w-1376 mx-auto px-5">
+            <h1 class="text-2xl md:text-3xl font-semibold text-#111827 mb-8 md:mb-10">Frequently asked questions</h1>
+            <ul class="flex gap-2 flex-col">
+                <li class="font-semibold cursor-pointer leading-6 flex justify-between p-6 border border-#D1D5DB rounded-lg"
+                    id="question">This is a
+                    question title <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></li>
+                <p
+                    class="q-text flex items-center justify-between w-full h-0 overflow-hidden transition-all duration-500 pl-4 pr-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim veniam recusandae ea repellendus
+                    non ipsum reiciendis praesentium rem dicta numquam omnis obcaecati aspernatur nobis, voluptate
+                    repudiandae qui quam architecto.</p>
+                <li class="font-semibold leading-6 flex justify-between p-6 border border-#D1D5DB cursor-pointer rounded-lg"
+                    id="question">This is a
+                    question title <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></li>
+                <p
+                    class="q-text flex items-center justify-between w-full h-0 overflow-hidden transition-all duration-500 pl-4 pr-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim veniam recusandae ea repellendus
+                    non ipsum reiciendis praesentium rem dicta numquam omnis obcaecati aspernatur nobis, voluptate
+                    repudiandae qui quam architecto.</p>
+                <li class="font-semibold cursor-pointer leading-6 flex justify-between p-6 border border-#D1D5DB rounded-lg"
+                    id="question">This is a
+                    question title <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></li>
+                <p
+                    class="q-text flex items-center justify-between w-full h-0 overflow-hidden transition-all duration-500 pl-4 pr-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim veniam recusandae ea repellendus
+                    non ipsum reiciendis praesentium rem dicta numquam omnis obcaecati aspernatur nobis, voluptate
+                    repudiandae qui quam architecto.</p>
+                <li class="font-semibold cursor-pointer leading-6 flex justify-between p-6 border border-#D1D5DB rounded-lg"
+                    id="question">This is a
+                    question title <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></li>
+                <p
+                    class="q-text flex items-center justify-between w-full h-0 overflow-hidden transition-all duration-500 pl-4 pr-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim veniam recusandae ea repellendus
+                    non ipsum reiciendis praesentium rem dicta numquam omnis obcaecati aspernatur nobis, voluptate
+                    repudiandae qui quam architecto.</p>
+                <li class="font-semibold cursor-pointer leading-6 flex justify-between p-6 border border-#D1D5DB rounded-lg"
+                    id="question">This is a
+                    question title <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></li>
+                <p
+                    class="q-text flex items-center justify-between w-full h-0 overflow-hidden transition-all duration-500 pl-4 pr-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim veniam recusandae ea repellendus
+                    non ipsum reiciendis praesentium rem dicta numquam omnis obcaecati aspernatur nobis, voluptate
+                    repudiandae qui quam architecto.</p>
+                <li class="font-semibold cursor-pointer leading-6 flex justify-between p-6 border border-#D1D5DB rounded-lg"
+                    id="question">This is a
+                    question title <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></li>
+                <p
+                    class="q-text flex items-center justify-between w-full h-0 overflow-hidden p-0 transition-all duration-500 pl-4 pr-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim veniam recusandae ea repellendus
+                    non ipsum reiciendis praesentium rem dicta numquam omnis obcaecati aspernatur nobis, voluptate
+                    repudiandae qui quam architecto.</p>
+            </ul>
+        </div>
+    </section>
+    <section class="py-8 md:py-15 px-5">
+        <div
+            class="max-w-1376 overflow-hidden rounded-3xl mx-auto flex flex-col-reverse md:flex-row bg-#F3F4F6 justify-between md:items-center items-start pl-6 md:pr-0 pr-6 pb-10 pt-10 md:pt-0 md:pb-0">
+            <div class="w-full mx-auto">
+                <h1
+                    class="max-w-2xl min-w-271 font-bold text-2xl md:text-3xl lg:text-4xl leading-6 md:leading-4xl text-#111827">
+                    Using products?</h1>
+                <h1
+                    class="max-w-2xl font-bold lg:text-3xl text-2xl leading-6 md:text-3xl md:leading-4xl text-#6B7280 mb-10">
+                    Write review</h1>
+                <button
+                    class="py-3 px-6 w-full md:max-w-157 mx-auto rounded-3xl bg-#2563EB font-medium leading-6 text-center text-white hover:opacity-80 active:opacity-60 duration-500">Write
+                    a review</button>
+            </div>
+            <img class="md:w-2xl lg:max-w-3xl mb-10 md:mb-0" src="/public/img/10_2.png" alt="">
+        </div>
+    </section>
+    <section class="py-8 md:py-15 px-5" id="blogs">
+        <div class="max-w-1376 mx-auto px-2">
+            <div class="flex justify-between w-full mx-auto items-center mb-8 md:mb-10">
+                <h2 class="text-2xl md:text-3xl text-#111827 font-semibold">This a title</h2>
+                <a href="./blogs.html" target="_blank"
+                    class="py-3 px-6 md:flex gap-2 hidden font-medium leading-6 text-#111827 items-center justify-center">
+                    Go to blog <svg class="flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
+                        <path d="M14 5L21 12M21 12L14 19M21 12L3 12" stroke="#111827" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 justify-center md:justify-center gap-x-5 lg:justify-between mx-auto md:mx-0 gap-y-5 mb-8">
+                <!-- orab turuvchi div -->
+                <div
+                    class="pl-2 py-2 lg:pl-6 pr-2 flex flex-col-reverse lg:flex-row  items-center w-full  border border-#D1D5DB rounded-lg">
+                    <!-- content div -->
+                    <div class="flex flex-col p-6 md:p-0">
+                        <div class="flex gap-3 text-xs font-semibold text-#111827 mb-3">
+                            <img src="./img/profil.svg" alt="profile foto">
+                            Jackie Colburn
+                        </div>
+                        <p class="leading-7 text-lg font-semibold mb-6">Elon Musk Is Approaching Twitter As If Its
+                            Users Are Interchangeable. Is He Right?</p>
+                        <div class="flex items-center gap-4">
+                            <p class="text-#6B7280 text-3 leading-4">Nov 4, 2022</p>
+                            <button class="border py-1 px-2 rounded-sm opacity-80 text-3 leading-4">Label</button>
+                        </div>
+                    </div>
+                    <img class="w-full h-44 hidden md:mb-8 lg:mb-0 lg:w-200 md:flex" src="./img/galaxy.png"
+                        alt="content foto">
+                </div>
+                <div
+                    class="pl-2 py-2 lg:pl-6 pr-2 flex flex-col-reverse lg:flex-row  items-center w-full  border border-#D1D5DB rounded-lg">
+                    <!-- content div -->
+                    <div class="flex flex-col p-6 md:p-0">
+                        <div class="flex gap-3 text-xs font-semibold text-#111827 mb-3">
+                            <img src="./img/profil.svg" alt="profile foto">
+                            Jackie Colburn
+                        </div>
+                        <p class="leading-7 text-lg font-semibold mb-6">Elon Musk Is Approaching Twitter As If Its
+                            Users Are Interchangeable. Is He Right?</p>
+                        <div class="flex items-center gap-4">
+                            <p class="text-#6B7280 text-3 leading-4">Nov 4, 2022</p>
+                            <button class="border py-1 px-2 rounded-sm opacity-80 text-3 leading-4">Label</button>
+                        </div>
+                    </div>
+                    <img class="w-full h-44 hidden md:mb-8 lg:mb-0 lg:w-200 md:flex" src="./img/galaxy.png"
+                        alt="content foto">
+                </div>
+                <div
+                    class="pl-2 py-2 lg:pl-6 pr-2 flex flex-col-reverse lg:flex-row  items-center w-full  border border-#D1D5DB rounded-lg">
+                    <!-- content div -->
+                    <div class="flex flex-col p-6 md:p-0">
+                        <div class="flex gap-3 text-xs font-semibold text-#111827 mb-3">
+                            <img src="./img/profil.svg" alt="profile foto">
+                            Jackie Colburn
+                        </div>
+                        <p class="leading-7 text-lg font-semibold mb-6">Elon Musk Is Approaching Twitter As If Its
+                            Users Are Interchangeable. Is He Right?</p>
+                        <div class="flex items-center gap-4">
+                            <p class="text-#6B7280 text-3 leading-4">Nov 4, 2022</p>
+                            <button class="border py-1 px-2 rounded-sm opacity-80 text-3 leading-4">Label</button>
+                        </div>
+                    </div>
+                    <img class="w-full h-44 hidden md:mb-8 lg:mb-0 lg:w-200 md:flex" src="./img/galaxy.png"
+                        alt="content foto">
+                </div>
+                <div
+                    class="pl-2 py-2 lg:pl-6 pr-2 flex flex-col-reverse lg:flex-row  items-center w-full  border border-#D1D5DB rounded-lg">
+                    <!-- content div -->
+                    <div class="flex flex-col p-6 md:p-0">
+                        <div class="flex gap-3 text-xs font-semibold text-#111827 mb-3">
+                            <img src="./img/profil.svg" alt="profile foto">
+                            Jackie Colburn
+                        </div>
+                        <p class="leading-7 text-lg font-semibold mb-6">Elon Musk Is Approaching Twitter As If Its
+                            Users Are Interchangeable. Is He Right?</p>
+                        <div class="flex items-center gap-4">
+                            <p class="text-#6B7280 text-3 leading-4">Nov 4, 2022</p>
+                            <button class="border py-1 px-2 rounded-sm opacity-80 text-3 leading-4">Label</button>
+                        </div>
+                    </div>
+                    <img class="w-full h-44 hidden md:mb-8 lg:mb-0 lg:w-200 md:flex" src="./img/galaxy.png"
+                        alt="content foto">
+                </div>
+            </div>
+            <a href="./blogs.html" target="_blank"
+                class="py-3 px-6 flex md:hidden lg:hidden gap-2 font-medium leading-6 text-#111827 items-center hover:gap-10 transition-all duration-500">
+                Go to blog <svg class="flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M14 5L21 12M21 12L14 19M21 12L3 12" stroke="#111827" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section class="py-8 md:py-15 px-5 overflow-hidden">
+        <div
+            class="bg-#F3F4F6 rounded-3xl max-w-1376 mx-auto px-6 pt-10 md:pt-0 md:pl-10 flex md:flex-row flex-col-reverse md:items-center items-start pb-10 md:pb-0 justify-between">
+            <div class="w-full md:w-502">
+                <h1
+                    class="max-w-2xl min-w-271 font-bold text-2xl md:text-3xl lg:text-4xl leading-6 md:leading-4xl text-#111827">
+                    Selling products?</h1>
+                <h1
+                    class="max-w-2xl font-bold lg:text-3xl text-2xl leading-6 md:text-3xl md:leading-4xl text-#6B7280 mb-10">
+                    Get discovered</h1>
+                <button
+                    class="py-3 px-6 rounded-3xl bg-#2563EB w-full md:max-w-[183px] leading-6 text-base text-white duration-300 hover:opacity-80 active:opacity-60">
+                    Claim your profil
+                </button>
+            </div>
+            <img class="pb-14 md:pb-0" src="./img/compas.png" alt="rotate compas">
+        </div>
+    </section>
+    <footer class="pt-15" id="footer">
+        <div class="max-w-1376 mx-auto px-5">
+            <div class="md:flex flex-wrap gap-5 pb-10 hidden">
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-64">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">product</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Categories</a>
+                    </li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Write a review</a>
+                    </li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Claim profile</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-64">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">company</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">About us</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Press</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Media kit</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Contact</a></li>
+                </ul>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-64">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">Social</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Twitter</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">LinkedIn</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Facebook</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Instagram</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Youtube</a></li>
+                </ul>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-64">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">Resurses</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Blog</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Newsletter</a>
+                    </li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Support</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Sitemap</a></li>
+                </ul>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-64">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">Legal</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Terms</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Privacy</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="flex md:hidden flex-col gap-4 pb-10">
+                <button id="footbtn"
+                    class="flex gap-6 items-center p-6 border justify-between font-semibold text-base rounded-lg border-#D1D5DB w-full">Product
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></button>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-72 rounded-3xl px-1 h-0 overflow-hidden footer">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">product</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Categories</a>
+                    </li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Write a review</a>
+                    </li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Claim profile</a>
+                    </li>
+                </ul>
+                <!-- chegara -->
+                <button id="footbtn"
+                    class="flex gap-6 items-center p-6 border justify-between font-semibold text-base rounded-lg border-#D1D5DB w-full">Company
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></button>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-72 rounded-3xl px-1 h-0 overflow-hidden footer">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">company</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">About us</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Press</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Media kit</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Contact</a></li>
+                </ul>
+                <!-- chegara -->
+                <button id="footbtn"
+                    class="flex gap-6 items-center p-6 border justify-between font-semibold text-base rounded-lg border-#D1D5DB w-full">Social
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></button>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-72 rounded-3xl px-1 h-0 overflow-hidden footer">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">Social</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Twitter</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">LinkedIn</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Facebook</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Instagram</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Youtube</a></li>
+                </ul>
+                <!-- chegara -->
+                <button id="footbtn"
+                    class="flex gap-6 items-center p-6 border justify-between font-semibold text-base rounded-lg border-#D1D5DB w-full">Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></button>
+                <ul class="flex flex-col gap-6 lg:w-53 md:w-72 rounded-3xl px-1 h-0 overflow-hidden footer">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">Resurses</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Blog</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Newsletter</a>
+                    </li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Support</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Sitemap</a></li>
+                </ul>
+                <!-- chegara -->
+                <button id="footbtn"
+                    class="flex gap-6 items-center p-6 border justify-between font-semibold text-base rounded-lg border-#D1D5DB w-full">Legal
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
+                            fill="black" />
+                    </svg></button>
+                <ul class="flex flex-col gap-y-6 lg:w-53 md:w-72 px-1 h-0 rounded-3xl overflow-hidden footer">
+                    <h1 class="text-lg text-#111827 capitalize font-semibold">Legal</h1>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Terms</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Privacy</a></li>
+                    <li class=""><a href="#" target="_blank" class="text-lg text-#6B7280 font-medium">Cookies</a></li>
+                </ul>
+            </div>
+            <hr>
+            <p class="py-10 font-medium text-#9CA3AF">© 2023 Softlog</p>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

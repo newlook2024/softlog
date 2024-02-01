@@ -1,0 +1,26 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rasm{
+    background-image: url(/public/img/bgfon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.q-text{
+  /* border: 2px solid rgba(0, 0, 0, 0.767); */
+  /* padding: 15px; */
+  border-radius: 24px;
+}
